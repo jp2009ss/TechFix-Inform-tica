@@ -1,0 +1,99 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6999ff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    background-color: #f2f2f2;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  color: var(--texto);
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  /* text-align: center; */
+  color: var(--azul-escuro);
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.campo {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--cinza-borda);
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: 2px solid var(--azul-escuro);
+  outline-offset: 1px;
+}
+
+button {
+  background: var(--azul-escuro);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: var(--azul-hover);
+}
+
+.resultado {
+  margin-top: 24px;
+  padding: 16px;
+  background: var(--cinza-fundo);
+  border-radius: 6px;
+  min-height: 24px;
+  font-size: 1.1rem;
+}
+
+.resultado strong {
+  color: var(--azul-escuro);
+}
+
+.erro {
+  color: #b91c1c;
+  font-size: 0.9rem;
+  margin-top: -14px;
+  margin-bottom: 16px;
+  display: none;
+}

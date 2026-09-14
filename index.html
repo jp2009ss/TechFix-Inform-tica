@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TechFix Informática</title>
+</head>
+<body>
+
+    <!-- Topo do site -->
+    <header>
+
+        <h1>TechFix Informática</h1>
+        <p> <i>Soluções tecnológicas para o seu negócio</i> </p>
+    
+    </header>
+
+    <!-- Campo de cadastro do cliente -->
+<div class ="campo">
+    <label for="nomedoCliente">Nome do Cliente:</label>
+    <input type="text" id="nomedoCliente" placeholder="Digite o nome do cliente">
+</div>
+
+<div class ="campo">
+    <label for="emaildoCliente">Email do Cliente:</label>
+    <input type="email" id="emaildoCliente" placeholder="Digite o email do cliente">
+</div>
+
+<div class ="campo">
+    <label for="servico">Escolha o serviço:</label>
+    <select id="servico">
+        <option value="">Selecione...</option>
+        <option value="Formatação de Computadores" data-preco="120">Formatação de Computadores - R$ 120,00</option>
+        <option value="instalacao de Programas" data-preco="50">Instalação de Software - R$ 50,00</option>
+        <option value="Limpeza Física" data-preco="80">Limpeza Física - R$ 80,00</option>
+        <option value="Troca de Peças (HD/SSD/Memória)" data-preco="150">Troca de Peças - R$ 150,00</option>
+        <option value="Backupde Dados" data-preco="70">Backup de Dados - R$ 70,00</option>
+    </select>
+</div>
+
+<p id="erro" class="erro">Preencha todos os campos obrigatórios e selecione um serviço.</p>
+
+<button id="calcular" class="botao">Calcular Orçamento</button>
+
+<div id="resultado" class="resultado"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
