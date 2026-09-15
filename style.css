@@ -1,39 +1,50 @@
-body {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #6999ff;
-    padding: 20px;
-    text-align: center;
-}
-
-section {
-    padding: 20px;
-    background-color: #f2f2f2;
-
+:root {
+  --azul-faixa: #6b93f5;
+  --azul-escuro: #1e3a5f;
+  --azul-hover: #16304d;
+  --cinza-borda: #d1d5db;
+  --cinza-fundo: #f3f4f6;
+  --texto: #1f2937;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #fff;
   color: var(--texto);
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  /* text-align: center; */
-  color: var(--azul-escuro);
-  font-size: 1.6rem;
-  margin-bottom: 30px;
+/* /* Faixa azul  */
+.cabecalho {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: var(--azul-faixa);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.cabecalho h1 {
+  margin: 0 0 8px 0;
+  color: #111827;
+  font-size: 1.8rem;
+}
+
+.cabecalho p {
+  margin: 0;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.conteudo {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
 label {
@@ -47,6 +58,7 @@ label {
 }
 
 input[type="text"],
+input[type="email"],
 select {
   width: 100%;
   padding: 10px 12px;
@@ -54,9 +66,12 @@ select {
   border-radius: 6px;
   font-size: 1rem;
   background: #fff;
+  display: block;
+  font-family: inherit;
 }
 
 input[type="text"]:focus,
+input[type="email"]:focus,
 select:focus {
   outline: 2px solid var(--azul-escuro);
   outline-offset: 1px;
@@ -71,6 +86,7 @@ button {
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.2s;
+  display: inline-block;
 }
 
 button:hover {
