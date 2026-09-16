@@ -113,3 +113,14 @@ button:hover {
   margin-bottom: 16px;
   display: none;
 }
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: var(--cinza-fundo);
+  color: var(--texto);
+  font-size: 1rem;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  
+}
